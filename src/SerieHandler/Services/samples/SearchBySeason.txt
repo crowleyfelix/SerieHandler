@@ -1,0 +1,12 @@
+﻿protected abstract HtmlNode SearchBySeason(HtmlDocument html);
+{
+        HtmlNode link = null;
+
+        try
+        {
+            link = html.DocumentNode.SelectSingleNode("//a");
+        }
+        catch { }
+
+        return link;
+}
